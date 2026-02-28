@@ -14,15 +14,31 @@
                                 <li class="nav-item current">
                                     <a class="nav-link" href="#home">Home</a>
                                 </li>
+                                                                <li>
+                                    <a class="nav-link" href="#client_logo">Client</a>
+                                </li>
+                                                                <li>
+                                    <a class="nav-link" href="#gt">Global Training</a>
+                                </li>
+                                                                <li>
+                                    <a class="nav-link" href="#map">Map</a>
+                                </li>
+                                                                                                <li>
+                                    <a class="nav-link" href="#video">Videos</a>
+                                </li>
+                                                                <li class="nav-item">
+                                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                                </li>
                                 <li>
                                     <a class="nav-link" href="#about">About</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#service">Service</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                                                                <li class="nav-item">
+                                    <a class="nav-link" href="#founder">Founder</a>
                                 </li>
+
                                 <li class="nav-item">
                                     <a class="nav-link" href="#blog">Blog</a>
                                 </li>

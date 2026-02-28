@@ -13,7 +13,9 @@
             <img src="{{ asset('storage/'.$project->featured_image) }}"
                  class="img-fluid mb--30">
 
-            <p>{{ $project->description }}</p>
+<div class="project-description fs-5">
+    {!! nl2br(e($project->description)) !!}
+</div>
             @if($project->images->count())
 
 <div class="row mt-5">
