@@ -17,6 +17,5 @@ Route::controller(Homecontroller::class)->group(function () {
 Route::get('/projects/upcoming', [ProjectController::class, 'upcoming'])->name('projects.upcoming');
 Route::get('/project/{slug}', [ProjectController::class, 'show'])->name('project.show');
 Route::get('/videos', [VideoController::class, 'index'])->name('videos');
-Route::post('/contact-send', [App\Http\Controllers\ContactController::class, 'send'])
-    ->name('contact.send');
+
 });

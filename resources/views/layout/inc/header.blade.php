@@ -1,9 +1,10 @@
  <!-- Start Header Area  -->
+ @if(request()->routeIs('index'))
         <header class="header-area header-style-two header--transparent header-light-mode header--sticky">
             <div class="header-wrapper">
                 <div class="header-left d-flex align-items-center">
                     <div class="logo">
-                        <a href="index.html">
+                        <a href="quazi.global">
                             <img src="assets/images/logo/logo-symbol-dark.png" alt="Creative Agency">
                         </a>
                     </div>
@@ -49,6 +50,32 @@
                             <!-- End Mainmanu Nav -->
                         </div>
                     </nav>
+                    {{-- ================= OTHER PAGES NAVBAR ================= --}}
+@else
+
+<nav class="header-area header--sticky bg-white shadow-sm py-3">
+
+    <div class="container d-flex justify-content-between align-items-center">
+
+        <div class="logo">
+            <a href="{{ route('index') }}">
+                <img src="{{ asset('assets/images/logo/logo-symbol-dark.png') }}"
+                     alt="Logo"
+                     style="height:40px;">
+            </a>
+        </div>
+
+        <div>
+            <a href="{{ route('index') }}" class="rn-button-style--2">
+                ← Back to Home
+            </a>
+        </div>
+
+    </div>
+
+</nav>
+
+@endif
                 </div>
                 <div class="header-right">
                     <div class="social-share-inner">

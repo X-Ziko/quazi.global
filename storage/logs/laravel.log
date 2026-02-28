@@ -4526,3 +4526,29 @@
 #62 G:/Xampp/htdocs/quaziglobal/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(23): require_once('G://Xampp//htdocs...')
 #63 {main}
 "} 
+[2026-02-28 09:34:31] local.ERROR: Class "App\Http\Controllers\ContactController" does not exist {"exception":"[object] (ReflectionException(code: -1): Class \"App\\Http\\Controllers\\ContactController\" does not exist at G:/Xampp/htdocs/quaziglobal_v/vendor/laravel/framework/src/Illuminate/Foundation/Console/RouteListCommand.php:235)
+[stacktrace]
+#0 G:/Xampp/htdocs/quaziglobal_v/vendor/laravel/framework/src/Illuminate/Foundation/Console/RouteListCommand.php(235): ReflectionClass->__construct('App//Http//Contro...')
+#1 G:/Xampp/htdocs/quaziglobal_v/vendor/laravel/framework/src/Illuminate/Foundation/Console/RouteListCommand.php(149): Illuminate/Foundation/Console/RouteListCommand->isVendorRoute(Object(Illuminate/Routing/Route))
+#2 G:/Xampp/htdocs/quaziglobal_v/vendor/laravel/framework/src/Illuminate/Foundation/Console/RouteListCommand.php(117): Illuminate/Foundation/Console/RouteListCommand->getRouteInformation(Object(Illuminate/Routing/Route))
+#3 [internal function]: Illuminate/Foundation/Console/RouteListCommand->{closure:Illuminate/Foundation/Console/RouteListCommand::getRoutes():117}(Object(Illuminate/Routing/Route), 41)
+#4 G:/Xampp/htdocs/quaziglobal_v/vendor/laravel/framework/src/Illuminate/Collections/Arr.php(840): array_map(Object(Closure), Array, Array)
+#5 G:/Xampp/htdocs/quaziglobal_v/vendor/laravel/framework/src/Illuminate/Collections/Collection.php(829): Illuminate/Support/Arr::map(Array, Object(Closure))
+#6 G:/Xampp/htdocs/quaziglobal_v/vendor/laravel/framework/src/Illuminate/Foundation/Console/RouteListCommand.php(117): Illuminate/Support/Collection->map(Object(Closure))
+#7 G:/Xampp/htdocs/quaziglobal_v/vendor/laravel/framework/src/Illuminate/Foundation/Console/RouteListCommand.php(102): Illuminate/Foundation/Console/RouteListCommand->getRoutes()
+#8 G:/Xampp/htdocs/quaziglobal_v/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate/Foundation/Console/RouteListCommand->handle()
+#9 G:/Xampp/htdocs/quaziglobal_v/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate/Container/BoundMethod::{closure:Illuminate/Container/BoundMethod::call():35}()
+#10 G:/Xampp/htdocs/quaziglobal_v/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(96): Illuminate/Container/Util::unwrapIfClosure(Object(Closure))
+#11 G:/Xampp/htdocs/quaziglobal_v/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate/Container/BoundMethod::callBoundMethod(Object(Illuminate/Foundation/Application), Array, Object(Closure))
+#12 G:/Xampp/htdocs/quaziglobal_v/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate/Container/BoundMethod::call(Object(Illuminate/Foundation/Application), Array, Array, NULL)
+#13 G:/Xampp/htdocs/quaziglobal_v/vendor/laravel/framework/src/Illuminate/Console/Command.php(211): Illuminate/Container/Container->call(Array)
+#14 G:/Xampp/htdocs/quaziglobal_v/vendor/symfony/console/Command/Command.php(341): Illuminate/Console/Command->execute(Object(Symfony/Component/Console/Input/ArgvInput), Object(Illuminate/Console/OutputStyle))
+#15 G:/Xampp/htdocs/quaziglobal_v/vendor/laravel/framework/src/Illuminate/Console/Command.php(180): Symfony/Component/Console/Command/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Illuminate/Console/OutputStyle))
+#16 G:/Xampp/htdocs/quaziglobal_v/vendor/symfony/console/Application.php(1102): Illuminate/Console/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#17 G:/Xampp/htdocs/quaziglobal_v/vendor/symfony/console/Application.php(356): Symfony/Component/Console/Application->doRunCommand(Object(Illuminate/Foundation/Console/RouteListCommand), Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#18 G:/Xampp/htdocs/quaziglobal_v/vendor/symfony/console/Application.php(195): Symfony/Component/Console/Application->doRun(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#19 G:/Xampp/htdocs/quaziglobal_v/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony/Component/Console/Application->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#20 G:/Xampp/htdocs/quaziglobal_v/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1235): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#21 G:/Xampp/htdocs/quaziglobal_v/artisan(16): Illuminate/Foundation/Application->handleCommand(Object(Symfony/Component/Console/Input/ArgvInput))
+#22 {main}
+"} 
