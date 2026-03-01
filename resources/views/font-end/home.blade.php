@@ -175,7 +175,7 @@
                     <h2 class="title">Quazi's Speaking</h2>
                 </div>
 
-                <div class="row align-items-stretch">
+                <div class="row d-flex align-items-stretch">
 
                     @foreach ($videos->take(6) as $video)
                         @php
@@ -195,18 +195,21 @@
                         @endphp
 
                         <div class="col-lg-4 col-md-6 mb--30">
-                            <div class="card shadow p-3 video-card" >
+                            <div class="card shadow p-3 video-card h-100 d-flex flex-column">
 
                                 <h4 class="fw-bold mb-2">
                                     {{ $video->title }}
                                 </h4>
 
-                                <p class="text-muted small mb-3">
+                                <p class="text-muted small mb-3 flex-grow-1">
                                     {{ $video->short_description }}
                                 </p>
 
 @if ($embedUrl)
     <iframe src="{{ $embedUrl }}"
+        width="100%"
+        height="220"
+        class="rounded"
         frameborder="0"
         allowfullscreen>
     </iframe>
