@@ -42,6 +42,9 @@ class VideoForm
                 RichEditor::make('details'),
 
                 DatePicker::make('video_date'),
+                TextInput::make('order')
+    ->numeric()
+    ->default(0),
                 //
             ]);
     }

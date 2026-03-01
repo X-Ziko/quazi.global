@@ -19,6 +19,7 @@ class VideosTable
                         TextColumn::make('category'),
                         TextColumn::make('video_date')->date(),
                         ImageColumn::make('thumbnail'),
+                        TextColumn::make('order'),
 
                 //
             ])

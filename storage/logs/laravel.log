@@ -4552,3 +4552,27 @@
 #21 G:/Xampp/htdocs/quaziglobal_v/artisan(16): Illuminate/Foundation/Application->handleCommand(Object(Symfony/Component/Console/Input/ArgvInput))
 #22 {main}
 "} 
+[2026-03-01 08:50:27] local.ERROR: Cannot use empty array elements in arrays {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use empty array elements in arrays at G:/Xampp/htdocs/quaziglobal_v/app/Filament/Resources/Videos/Schemas/VideoForm.php:45)
+[stacktrace]
+#0 {main}
+"} 
+[2026-03-01 08:50:40] local.ERROR: Cannot use empty array elements in arrays {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use empty array elements in arrays at G:/Xampp/htdocs/quaziglobal_v/app/Filament/Resources/Videos/Schemas/VideoForm.php:45)
+[stacktrace]
+#0 {main}
+"} 
+[2026-03-01 08:51:01] local.ERROR: Cannot use empty array elements in arrays {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use empty array elements in arrays at G:/Xampp/htdocs/quaziglobal_v/app/Filament/Resources/Videos/Schemas/VideoForm.php:45)
+[stacktrace]
+#0 {main}
+"} 
+[2026-03-01 08:51:01] local.ERROR: Cannot use empty array elements in arrays {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use empty array elements in arrays at G:/Xampp/htdocs/quaziglobal_v/app/Filament/Resources/Videos/Schemas/VideoForm.php:45)
+[stacktrace]
+#0 {main}
+"} 
+[2026-03-01 08:52:01] local.ERROR: Cannot use empty array elements in arrays {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use empty array elements in arrays at G:/Xampp/htdocs/quaziglobal_v/app/Filament/Resources/Videos/Schemas/VideoForm.php:45)
+[stacktrace]
+#0 {main}
+"} 
+[2026-03-01 08:52:01] local.ERROR: Cannot use empty array elements in arrays {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use empty array elements in arrays at G:/Xampp/htdocs/quaziglobal_v/app/Filament/Resources/Videos/Schemas/VideoForm.php:45)
+[stacktrace]
+#0 {main}
+"} 
