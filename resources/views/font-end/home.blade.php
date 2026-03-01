@@ -175,7 +175,7 @@
                     <h2 class="title">Quazi's Speaking</h2>
                 </div>
 
-                <div class="row">
+                <div class="row align-items-stretch">
 
                     @foreach ($videos->take(6) as $video)
                         @php
