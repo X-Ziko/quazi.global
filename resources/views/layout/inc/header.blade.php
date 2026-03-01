@@ -4,7 +4,7 @@
             <div class="header-wrapper">
                 <div class="header-left d-flex align-items-center">
                     <div class="logo">
-                        <a href="quazi.global">
+                        <a href="{{ route('index') }}">
                             <img src="assets/images/logo/logo-symbol-dark.png" alt="Creative Agency">
                         </a>
                     </div>

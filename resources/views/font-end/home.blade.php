@@ -195,7 +195,7 @@
                         @endphp
 
                         <div class="col-lg-4 col-md-6 mb--30">
-                            <div class="card shadow p-3">
+                            <div class="card shadow p-3 video-card" >
 
                                 <h4 class="fw-bold mb-2">
                                     {{ $video->title }}

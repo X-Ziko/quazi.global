@@ -18052,3 +18052,31 @@ a.purchase-btn:hover {
     object-fit: contain;
 }
 
+/* Equal height row */
+#video .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Column stretch */
+#video .col-lg-4 {
+    display: flex;
+}
+
+/* Card full height */
+.video-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+/* Description fixed space */
+.video-card p {
+    min-height: 60px;   /* সব description equal height */
+}
+
+/* Iframe responsive */
+.video-card iframe {
+    border-radius: 6px;
+}
