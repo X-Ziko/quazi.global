@@ -18080,3 +18080,24 @@ a.purchase-btn:hover {
 .video-card iframe {
     border-radius: 6px;
 }
+#video .video-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#video .video-card h4 {
+    min-height: 50px; /* Title same alignment রাখবে */
+}
+
+#video .video-card p {
+    flex-grow: 1;
+    min-height: 60px;
+}
+
+/* 🔥 iframe fixed size */
+#video .video-card iframe {
+    width: 100% !important;
+    height: 220px !important;
+    border-radius: 10px;
+}

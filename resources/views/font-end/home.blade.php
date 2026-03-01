@@ -205,14 +205,12 @@
                                     {{ $video->short_description }}
                                 </p>
 
-                                @if ($embedUrl)
-                                    <div style="position:relative;padding-bottom:56.25%;height:0;">
-                                        <iframe src="{{ $embedUrl }}"
-                                            style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"
-                                            allowfullscreen>
-                                        </iframe>
-                                    </div>
-                                @endif
+@if ($embedUrl)
+    <iframe src="{{ $embedUrl }}"
+        frameborder="0"
+        allowfullscreen>
+    </iframe>
+@endif
 
                             </div>
                         </div>
