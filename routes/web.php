@@ -7,6 +7,7 @@ use App\Http\Controllers\PagesController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\VideoController;
+use App\Http\Controllers\ContactController;
 
 Route::controller(Homecontroller::class)->group(function () {
     Route::get('/', 'index')->name('index');
@@ -17,5 +18,8 @@ Route::controller(Homecontroller::class)->group(function () {
 Route::get('/projects/upcoming', [ProjectController::class, 'upcoming'])->name('projects.upcoming');
 Route::get('/project/{slug}', [ProjectController::class, 'show'])->name('project.show');
 Route::get('/videos', [VideoController::class, 'index'])->name('videos');
+
+Route::post('/send-message', [ContactController::class, 'send'])
+    ->name('contact.send');
 
 });

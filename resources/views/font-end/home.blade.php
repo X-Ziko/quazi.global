@@ -567,7 +567,13 @@
                                         </p>
                                     </div>
                                     <div class="form-wrapper">
-                                        <form >
+                                        @if(session('success'))
+    <div class="alert alert-success">
+        {{ session('success') }}
+    </div>
+@endif
+                                        <form method="POST" action="{{ route('contact.send') }}">
+    @csrf
                                             <label htmlFor="item01">
                                                 <input type="text" name="name" id="item01"
                                                     placeholder="Your Full Name *" />
