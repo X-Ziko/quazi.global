@@ -16,16 +16,16 @@ class ContactController extends Controller
             'message' => 'required',
         ]);
 
-        Mail::raw(
-            "Name: {$request->name}\n".
-            "Email: {$request->email}\n\n".
-            "Message:\n{$request->message}",
-            function ($message) use ($request) {
-                $message->to('quazi@quazi.global')
-                        ->subject($request->subject)
-                        ->replyTo($request->email);
-            }
-        );
+       Mail::mailer('smtp')->raw(
+    "Name: {$request->name}\n".
+    "Email: {$request->email}\n\n".
+    "Message:\n{$request->message}",
+    function ($message) use ($request) {
+        $message->to('quazi@quazi.global')
+                ->subject($request->subject)
+                ->replyTo($request->email);
+    }
+);
 
         return back()->with('success', 'Message Sent Successfully!');
     }
