@@ -36,7 +36,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="section-title text-center mb--50">
-                            <h2 class="title">Client Logo</h2>
+                            <h2 class="title">Client's I Served'</h2>
                         </div>
                     </div>
                 </div>
@@ -511,12 +511,13 @@
 
 
     <!-- Start Blog Area  -->
+    
     <div class="rn-blog-area rn-section-gap bg_color--5" id="blog">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title section-title--3 text-center mb--30">
-                        <h2 class="title">Upcoming Project</h2>
+                        <h2 class="title">What I am Doing Next</h2>
                         <p>There are several upcoming initiatives and developments currently in progress. Stay tuned for
                             updates as we work on delivering impactful projects and new opportunities.</p>
                     </div>
