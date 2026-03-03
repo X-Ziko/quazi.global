@@ -39,6 +39,7 @@ class Homecontroller extends Controller
 
     // Normal projects for Portfolio Section
     $portfolioProjects = Project::where('is_upcoming', false)
+    ->orderBy('order', 'asc')
                         ->latest()
                         ->take(6)
                         ->get();
