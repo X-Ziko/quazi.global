@@ -30,7 +30,9 @@ class Homecontroller extends Controller
         $header = Header::where('is_active', true)->first();
         $clients = Client::where('is_active', true)->get();
     // Upcoming projects for Latest Section
+    $totalUpcoming = Project::where('is_upcoming', true)->count();
     $upcomingProjects = Project::where('is_upcoming', true)
+                        ->orderBy('order', 'asc')
                         ->latest()
                         ->take(6)
                         ->get();
@@ -41,7 +43,7 @@ class Homecontroller extends Controller
                         ->take(6)
                         ->get();
 
-    return view('font-end.home', compact('upcomingProjects', 'portfolioProjects', 'header','clients'));
+    return view('font-end.home', compact('upcomingProjects', 'totalUpcoming',  'portfolioProjects', 'header','clients'));
 
    
         // return view(view: 'font-end.home');
