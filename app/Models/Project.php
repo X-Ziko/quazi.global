@@ -17,6 +17,7 @@ class Project extends Model
         'project_date',
         'is_upcoming',
         'is_featured',
+        'order'
     ];
     
     protected $with = ['images'];

@@ -16,6 +16,7 @@ return new class extends Migration
         $table->foreignId('project_id')
               ->constrained()
               ->onDelete('cascade');
+              $table->integer('order')->default(0);
 
         $table->string('image');
         $table->timestamps();

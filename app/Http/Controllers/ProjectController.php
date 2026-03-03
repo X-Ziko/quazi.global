@@ -17,8 +17,17 @@ public function index()
 
 public function upcoming()
 {
-    $projects = Project::where('is_upcoming', true)->latest()->paginate(9);
-    return view('projects.upcoming', compact('projects'));
+    // $projects = Project::where('is_upcoming', true)->latest()->paginate(9);
+    // return view('projects.upcoming', compact('projects'));
+
+        $totalUpcoming = Project::where('is_upcoming', true)->count();
+
+    $projects = Project::where('is_upcoming', true)
+        ->orderBy('order', 'asc') // order onujayi
+        ->take(6) // max 6 ta
+        ->get();
+
+    return view('projects.upcoming', compact('projects', 'totalUpcoming'));
 }
 
 public function show($slug)

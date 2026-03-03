@@ -237,6 +237,7 @@
 
     <!-- Start Blog Area  -->
     
+    @if($totalUpcoming > 0)
     <div class="rn-blog-area rn-section-gap bg_color--5" id="blog">
         <div class="container">
             <div class="row">
@@ -272,6 +273,15 @@
                         </div>
                     </div>
                 @endforeach
+                {{-- 🔵 View More Button (Show If More Than 6) --}}
+        @if($totalUpcoming > 6)
+            <div class="text-center mt-4">
+                <a href="{{ route('projects.upcoming') }}" class="rn-btn">
+                    View More
+                </a>
+            </div>
+            @endif
+        @endif
                 <!-- End Blog Area  -->
 
 
@@ -563,11 +573,11 @@
                                 <div class="col-lg-6 order-2 order-lg-1">
                                     <div class="section-title text-start mb--50 mb_sm--30 mb_md--30">
                                         <h2 class="title">Reach Out to Me.</h2>
-                                        <p class="description">I am available for freelance work. Connect with me via
+                                        {{-- <p class="description">I am available for freelance work. Connect with me via
                                             phone:
                                             <a href="https://wa.me:+880 1711-561861">+880 1711-561861</a> or email:
                                             <a href="mailto:quazi@quazi.global"> quazi@quazi.global</a>
-                                        </p>
+                                        </p> --}}
                                     </div>
                                     <div class="form-wrapper">
                                         @if(session('success'))
