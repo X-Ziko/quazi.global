@@ -36,7 +36,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="section-title text-center mb--50">
-                            <h2 class="title">Client's I Served'</h2>
+                            <h2 class="title">Client's I Served</h2>
                         </div>
                     </div>
                 </div>
@@ -232,6 +232,48 @@
             </div>
         </div>
     @endif
+
+    
+
+    <!-- Start Blog Area  -->
+    
+    <div class="rn-blog-area rn-section-gap bg_color--5" id="blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title section-title--3 text-center mb--30">
+                        <h2 class="title">What I am Doing Next</h2>
+                        <p>There are several upcoming initiatives and developments currently in progress. Stay tuned for
+                            updates as we work on delivering impactful projects and new opportunities.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Start Blog Area  -->
+                @foreach ($upcomingProjects as $project)
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="blog blog-style--1">
+                            <div class="thumbnail">
+                                <a href="#">
+                                    <img class="w-100" src="{{ asset('storage/' . $project->featured_image) }}"
+                                        alt="Blog Images" />
+                                </a>
+                            </div>
+                            <div class="content">
+                                <p class="blogtype">{{ $project->category }}</p>
+                                <h4 class="title"><a
+                                        href="{{ route('project.show', $project->slug) }}">{{ $project->title }}</a>
+                                </h4>
+                                <div class="blog-btn">
+                                    <a class="rn-btn text-white" href="{{ route('project.show', $project->slug) }}">Read
+                                        More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
+                <!-- End Blog Area  -->
+
 
 
     <!-- Start Portfolio Area  -->
@@ -508,46 +550,6 @@
     @endif
     <!-- End Founder Area -->
 
-
-
-    <!-- Start Blog Area  -->
-    
-    <div class="rn-blog-area rn-section-gap bg_color--5" id="blog">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title section-title--3 text-center mb--30">
-                        <h2 class="title">What I am Doing Next</h2>
-                        <p>There are several upcoming initiatives and developments currently in progress. Stay tuned for
-                            updates as we work on delivering impactful projects and new opportunities.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <!-- Start Blog Area  -->
-                @foreach ($upcomingProjects as $project)
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                        <div class="blog blog-style--1">
-                            <div class="thumbnail">
-                                <a href="#">
-                                    <img class="w-100" src="{{ asset('storage/' . $project->featured_image) }}"
-                                        alt="Blog Images" />
-                                </a>
-                            </div>
-                            <div class="content">
-                                <p class="blogtype">{{ $project->category }}</p>
-                                <h4 class="title"><a
-                                        href="{{ route('project.show', $project->slug) }}">{{ $project->title }}</a>
-                                </h4>
-                                <div class="blog-btn">
-                                    <a class="rn-btn text-white" href="{{ route('project.show', $project->slug) }}">Read
-                                        More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                @endforeach
-                <!-- End Blog Area  -->
 
 
 
