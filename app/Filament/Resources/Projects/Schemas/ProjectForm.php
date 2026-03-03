@@ -50,6 +50,9 @@ class ProjectForm
 
             Toggle::make('is_featured')
                 ->label('Show on Homepage'),
+                TextInput::make('order')
+    ->numeric()
+    ->default(0),
 
                 Repeater::make('images')
     ->relationship('images')

@@ -26,6 +26,7 @@ class ProjectsTable
             IconColumn::make('is_upcoming')->boolean(),
 
             IconColumn::make('is_featured')->boolean(),
+            TextColumn::make('order'),
                 //
             ])
             ->filters([
