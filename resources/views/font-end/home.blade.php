@@ -245,7 +245,7 @@
                     <div class="section-title section-title--3 text-center mb--30">
                         <h2 class="title">What I am Doing Next</h2>
                         <p>There are several upcoming initiatives and developments currently in progress. Stay tuned for
-                            updates as we work on delivering impactful projects and new opportunities.</p>
+                            updates as i work on delivering impactful projects and new opportunities.</p>
                     </div>
                 </div>
             </div>
