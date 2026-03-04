@@ -11,6 +11,7 @@ use Filament\Forms\Components\Repeater;
 use Filament\Forms\Components\Toggle;
 use Filament\Forms\Components\DatePicker;
 use Illuminate\Support\Str;
+use Filament\Forms\Components\RichEditor;
 
 class ProjectForm
 {
@@ -33,7 +34,7 @@ class ProjectForm
 
             Textarea::make('short_description'),
 
-            Textarea::make('description')
+            RichEditor::make('description')
                 ->columnSpanFull(),
 
             FileUpload::make('featured_image')
