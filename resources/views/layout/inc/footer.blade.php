@@ -79,6 +79,7 @@
         
         <div class="footer-logo">
             <h2 class="logo-text">QUAZI M. AHMED</h2>
+            <i class="logo-tagline">LLB., MBA (IBA), MA (Japan), IMP (NYU, USA), CISS (Norway) </i>
             <p class="logo-tagline">Global Leadership Trainer & Executive Coach</p>
         </div>
         
