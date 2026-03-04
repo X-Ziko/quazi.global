@@ -18039,16 +18039,19 @@ a.purchase-btn:hover {
     }
 }
 .logo-wrapper {
-    width: 150px;        /* fixed width */
-    height: 80px;         /* fixed height */
+    width: 180px;              /* fixed box width */
+    height: 100px;             /* fixed box height */
     display: flex;
     align-items: center;
     justify-content: center;
+    background: transparent;   /* চাইলে white দিতে পারো */
+    overflow: hidden;
 }
 
 .logo-wrapper img {
-    max-width: 100%;
-    max-height: 100%;
+    width: auto;
+    height: auto;
+    max-width: 90%;            /* box এর ভিতরে থাকবে */
+    max-height: 70%;           /* height control */
     object-fit: contain;
 }
-
