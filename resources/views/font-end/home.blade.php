@@ -619,6 +619,7 @@
                     </div>
                 </div>
                 <!-- End Contact Area  -->
+                <!-- v2 -->
 
 
             @endsection
