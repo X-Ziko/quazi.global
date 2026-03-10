@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Project;
+use Carbon\Carbon;
 
 class ProjectController extends Controller
 {
@@ -20,11 +21,22 @@ public function upcoming()
     // $projects = Project::where('is_upcoming', true)->latest()->paginate(9);
     // return view('projects.upcoming', compact('projects'));
 
-        $totalUpcoming = Project::where('is_upcoming', true)->count();
+    //     $totalUpcoming = Project::where('is_upcoming', true)->count();
+
+    // $projects = Project::where('is_upcoming', true)
+    //     ->orderBy('order', 'asc') // order onujayi
+    //     ->take(6) // max 6 ta
+    //     ->get();
+
+    // return view('projects.upcoming', compact('projects', 'totalUpcoming'));
+        $totalUpcoming = Project::where('is_upcoming', true)
+        ->whereDate('project_date', '>=', Carbon::today())
+        ->count();
 
     $projects = Project::where('is_upcoming', true)
-        ->orderBy('order', 'asc') // order onujayi
-        ->take(6) // max 6 ta
+        ->whereDate('project_date', '>=', Carbon::today())
+        ->orderBy('project_date', 'asc') 
+        ->take(6)
         ->get();
 
     return view('projects.upcoming', compact('projects', 'totalUpcoming'));
