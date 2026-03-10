@@ -29,17 +29,21 @@ public function upcoming()
     //     ->get();
 
     // return view('projects.upcoming', compact('projects', 'totalUpcoming'));
-        $totalUpcoming = Project::where('is_upcoming', true)
-        ->whereDate('project_date', '>=', Carbon::today())
-        ->count();
+    $today = Carbon::today();
 
-    $projects = Project::where('is_upcoming', true)
-        ->whereDate('project_date', '>=', Carbon::today())
-        ->orderBy('project_date', 'asc') 
+    $projects = Project::where('is_upcoming', 1)
+        ->whereNotNull('project_date')
+        ->whereDate('project_date', '>=', $today)
+        ->orderBy('project_date', 'asc')
         ->take(6)
         ->get();
 
-    return view('projects.upcoming', compact('projects', 'totalUpcoming'));
+    $totalUpcoming = Project::where('is_upcoming', 1)
+        ->whereNotNull('project_date')
+        ->whereDate('project_date', '>=', $today)
+        ->count();
+
+    return view('projects.upcoming', compact('projects','totalUpcoming'));
 }
 
 public function show($slug)

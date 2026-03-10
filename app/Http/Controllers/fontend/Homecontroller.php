@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Models\Project;
 use App\Models\Header;
 use App\Models\Client;
+use Carbon\Carbon;
 
 class Homecontroller extends Controller
 {
@@ -29,11 +30,16 @@ class Homecontroller extends Controller
     {
         $header = Header::where('is_active', true)->first();
         $clients = Client::where('is_active', true)->get();
-    // Upcoming projects for Latest Section
-    $totalUpcoming = Project::where('is_upcoming', true)->count();
-    $upcomingProjects = Project::where('is_upcoming', true)
-                        ->orderBy('order', 'asc')
-                        ->latest()
+        $today = Carbon::today();
+
+        // Upcoming Projects (future only)
+        $totalUpcoming = Project::where('is_upcoming', true)
+                        ->whereDate('project_date', '>=', $today)
+                        ->count();
+
+        $upcomingProjects = Project::where('is_upcoming', true)
+                        ->whereDate('project_date', '>=', $today)
+                        ->orderBy('project_date', 'asc')
                         ->take(6)
                         ->get();
 
